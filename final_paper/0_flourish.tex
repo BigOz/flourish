@@ -1,0 +1,75 @@
+
+
+%\documentclass[journal,10pt,draftclsnofoot,onecolumn]{IEEEtran} %draftclsnofoot
+%\documentclass[confl, draftclsnofoot]{IEEEtran}
+%\documentclass[conference,onecolumn,draft]{IEEEtran}
+\documentclass[conference]{IEEEtran}
+\usepackage{grffile}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{multicol}
+\usepackage{subcaption}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{pifont}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+
+%\usepackage{setspace}
+%\doublespacing
+%\onecolumn
+\begin{document}
+\title{Flourish: Predicting Energy Savings of Current Technologies\\}
+\author{Austin~Olson, Yaswanth~Kodavali, Ammon~Clegg % <-this % stops a space
+\IEEEcompsocitemizethanks{The authors are of Utah State University, Logan, Utah, USA.
+e-mail: (austin.olson@aggiemail.usu.edu)}}% <-this % stops a space
+
+\maketitle
+
+\begin{abstract}
+\input{1_abstract.tex}
+\end{abstract}
+
+\renewcommand\IEEEkeywordsname{Key Words}
+\begin{IEEEkeywords}
+Monte Carlo Tree Search, Solar Prediction, Smart Battery, Smart Home.
+\end{IEEEkeywords}
+
+\section{INTRODUCTION}
+\IEEEPARstart
+\input{2_introduction.tex}
+
+\section{PREVIOUS WORK}
+\input{3_previous_work.tex}
+
+\section{CONTRIBUTIONS}
+\input{4_contributions.tex}
+
+\section{METHOD}
+\input{5_method.tex}
+
+\section{EXPERIMENTS}
+\input{6_experiments.tex}
+
+\section{CONCLUSION}
+\input{7_conclusion.tex}
+
+\section{FURTHER STUDY}
+\input{8_further_study.tex}
+
+\section*{Acknowledgment}
+
+Portions of the software used in this paper was forked from andysalerno/reversi\_ai on GitHub \cite{noauthor_winning_2016}. All forked software was heavily modified for the specific needs of the tests in this paper. To find the software as used in this paper, visit BigOz on GitHub.
+
+Data for this study came from multiple sources. Weather data for Logan, UT was from the Utah Climate Center website. Solar radiation data is courtesy of Apogee Instruments in Logan, UT. Time-of-day pricing information for Utah comes from Rocky Mountain Power. Average home energy usage information comes for the USEIA. Other data sources are credited where appropriate.
+
+\bibliographystyle{plain}
+\begin{small}
+\bibliography{flourish}
+\end{small}
+\end{document}
